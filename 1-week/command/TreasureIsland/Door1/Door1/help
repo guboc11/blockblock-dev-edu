@@ -1,0 +1,16 @@
+echo "좀 더 깊은 곳으로 오셨습니다.
+
+ls 명령어를 실행하니 Treasure2가 보이는 군요.
+
+Treasure2를 TreasureHouse에 옮겨 볼까요??
+
+Treasure2를 한 단계 한 단계 옮기기는 힘들고 귀찮은 것 같습니다.
+
+그렇다면 한 번에 옮겨보도록 하겠습니다. 다음 명령어를 실행해 봅시다.
+
+mv Treasure2 ../../TreasureHouse/
+
+TreasureHouse에 보물이 잘 있는지 확인해볼까요? 지금까지 모은 보물은 2개가 있어야 합니다. 다음 명령어를 실행해 봅시다.
+
+ls ../../TreasureHouse/
+"
