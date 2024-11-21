@@ -73,6 +73,11 @@ cp file_name
 mv file_name /directory/path/
 ```
 
+# 변수 설정
+``` bash
+export VAR_NAME="something"
+```
+
 # 1주차 내용과 관련 없지만 유용한 Command
 
 - 명령어의 사용설명서(manual)을 보여주는 명령어
