@@ -1,0 +1,33 @@
+echo "위 층에서 우리는 다음 명령어로 보물을 옮겼습니다.
+
+mv Treasure3 /workspace/blockblock-dev-edu/1-week/command/TreasureIsland/TreasureHouse/
+
+이 또한 너무 길어서 복잡해 보이죠? '변수'를 사용해서 명령어를 짧게 줄여 보겠습니다.
+
+변수 설정을 할 때 export 명령어를 사용합니다. 다음과 같이 명령어를 실행 해 보겠습니다.
+
+export TREASURE_HOUSE="/workspace/blockblock-dev-edu/1-week/command/TreasureIsland/TreasureHouse/"
+
+echo 명령어로 변수에 어떤 값이 저장되어 있는지 확인할 수 있습니다. 
+다음 명령어를 실행 해 봅시다. 변수 앞에 달러 사인($)이 들어가야 합니다.
+
+echo \$TREASURE_HOUSE
+
+TREASURE_HOUSE 에 TreasureHouse 디렉토리의 절대 경로가 들어가 있는 걸 확인하셨습니다.
+
+TREASURE_HOUSE 도 길다구요? 그럼 짧게 TR_H 로 변수 설정을 해보겠습니다. (변수 이름은 편한대로 하셔도 됩니다.)
+
+export TR_H="/workspace/blockblock-dev-edu/1-week/command/TreasureIsland/TreasureHouse/"
+echo \$TR_H
+
+이를 이용해서 보물을 옮겨 봅시다.
+
+mv Treasure4 \$TR_H
+ls \$TR_H
+
+보물을 옮기는 것 이외에도 여러 값들을 변수화 하여 command를 쉽게 실행할 수 있습니다. 
+변수를 사용 할 때 달러 사인($) 잊지 마세요.
+
+마지막으로, export로 변수 설정을 한 것은 새로운 terminal에선 적용이 안 되니 주의하세요."
+
+
