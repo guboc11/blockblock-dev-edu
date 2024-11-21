@@ -30,8 +30,9 @@ cd ..
 
 - 특정 Directory로 이동하기
 ``` bash
-cd directory_name
+cd /directory_path/directory_name
 ```
+
 
 # 확인하기
 
@@ -45,6 +46,7 @@ vi file_name
 ``` bash
 cat file_name
 ```
+
 
 # 생성/삭제하기
 - File 생성하기
@@ -62,6 +64,7 @@ rm file_name
 rm -r directory_name
 ```
 
+
 # 복사/이동시키기
 - File 복사하기
 ``` bash
@@ -73,17 +76,26 @@ cp file_name
 mv file_name /directory/path/
 ```
 
+
 # 변수 설정
 ``` bash
 export VAR_NAME="something"
 ```
 
-# 1주차 내용과 관련 없지만 유용한 Command
 
+# 기타
 - 명령어의 사용설명서(manual)을 보여주는 명령어
 ``` bash
 man command_name
 ```
+
+- 사용한 command 이력을 보여주는 명령어
+``` bash
+history
+```
+
+
+# 1주차 내용과 관련 없지만 유용한 Command
 
 - cpu, memory 등 process 정보를 보여주는 명령어
 ``` bash
@@ -91,11 +103,6 @@ top
 ```
 ``` bash
 htop
-```
-
-- 사용한 command 이력을 보여주는 명령어
-``` bash
-history
 ```
 
 - 파일에 텍스트를 작성하는 명령어
