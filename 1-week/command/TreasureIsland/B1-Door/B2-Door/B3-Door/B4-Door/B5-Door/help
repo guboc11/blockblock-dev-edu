@@ -1,16 +1,18 @@
-echo "여기는 4가지 room이 있는 층입니다. 각 방 별로 새로운 command 쓰임새를 익히실 예정입니다.
+echo "여기는 5가지 room이 있는 층입니다. 각 방 별로 새로운 command 쓰임새를 익히실 예정입니다.
 
 순서는 상관 없이 각 room에 들어가서 ./help 실행하면 나오는 도움말 대로 진행하시면 될 것 같습니다.
 
 굳이 순서를 정하자면
-1. touch-room
-2. mv-room
-3. cp-room
-4. rm-room
+1. cat-room
+2. touch-room
+3. mv-room
+4. cp-room
+5. rm-room
 순으로 진행하셔도 좋을 것 같습니다.
 
-먼저 touch-room 부터 가볼까요? 그 다음 순서대로 들어갔다 오시면 될 것 같습니다.
+먼저 cat-room 부터 가볼까요? 그 다음 순서대로 들어갔다 오시면 될 것 같습니다.
 
+cd cat-room
 cd touch-room
 cd mv-room
 cd cp-room
