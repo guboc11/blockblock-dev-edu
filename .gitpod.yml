@@ -6,6 +6,14 @@
           sudo tar -C /opt -xzf nvim-linux64.tar.gz &&
           sudo rm nvim-linux64.tar.gz &&
           echo `export PATH="$PATH:/opt/nvim-linux64/bin"` >> ~/.bashrc &&
-          source ~/.bashrc
+          source ~/.bashrc &&
+
+          mv ~/.config/nvim{,.bak} &&
+
+          mv ~/.local/share/nvim{,.bak} &&
+          mv ~/.local/state/nvim{,.bak} &&
+          mv ~/.cache/nvim{,.bak} &&
+          git clone https://github.com/LazyVim/starter ~/.config/nvim &&
+          rm -rf ~/.config/nvim/.git &&
 
       command: nvim -v
