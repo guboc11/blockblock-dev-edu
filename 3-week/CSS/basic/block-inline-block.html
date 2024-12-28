@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rendering Example</title>
+    <style>
+    .block {
+      display: block;
+      background-color: lightblue;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      margin: 0 5px;
+      padding: 5px;
+      width: 200px; /* inline 에서는 적용이 안 된다. */
+    }
+    .inline-block {
+      display: inline-block;
+      background-color: lightseagreen;
+      margin: 0 5px;
+      padding: 5px;
+      width: 200px; /* inline-block 에서 적용이 된다. */
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Rendering Example</h1>
+    <div class="block">This is a block element (현재 화면 가로 크기의 최대)</div>
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+    <span class="inline">Inline 3</span>
+    <span class="inline-block">Inline Block 1</span>
+    <span class="inline-block">Inline Block 2</span>
+  </body>
+</html>
