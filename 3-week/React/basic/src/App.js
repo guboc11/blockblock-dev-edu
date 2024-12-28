@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>blockblock</h1>
+      <p className="text-5xl">blockblock</p>
     </div>
   );
 }
