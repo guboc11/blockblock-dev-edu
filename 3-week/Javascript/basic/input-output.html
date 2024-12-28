@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Input Example</title>
+  </head>
+  <body>
+    <h1>Enter Your Name</h1>
+    <input type="text" id="nameInput" placeholder="Type your name" />
+    <button onclick="displayGreeting()">Submit</button>
+    <p id="greeting"></p>
+
+    <script>
+    function displayGreeting() {
+      const name = document.getElementById("nameInput").value;
+      document.getElementById("greeting").textContent = "Hello, " + name + "!";
+    }
+  </script>
+  </body>
+</html>

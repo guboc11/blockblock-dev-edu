@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Mouse Event</title>
+    <style>
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Hover Over the Box</h1>
+    <div id="colorBox" onmouseover="changeColor()"
+      onmouseout="resetColor()"></div>
+
+    <script>
+    function changeColor() {
+      document.getElementById("colorBox").style.backgroundColor = "lightcoral";
+    }
+    function resetColor() {
+      document.getElementById("colorBox").style.backgroundColor = "lightblue";
+    }
+  </script>
+  </body>
+</html>
