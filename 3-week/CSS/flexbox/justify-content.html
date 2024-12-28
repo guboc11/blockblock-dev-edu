@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox Justify Content</title>
+    <style>
+    .flex-start-container {
+      display: flex;
+      justify-content: flex-start; /* Try: flex-start, center, space-between */
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .flex-end-container {
+      display: flex;
+      justify-content: flex-end; /* Try: flex-start, center, space-between */
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center; /* Try: flex-start, center, space-between */
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .space-between-container {
+      display: flex;
+      justify-content: space-between; /* Try: flex-start, center, space-between */
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .space-around-container {
+      display: flex;
+      justify-content: space-around; /* Try: flex-start, center, space-between */
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 5px;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Flexbox Justify Content</h1>
+    <div class="flex-start">
+      <h2>flex-start</h2>
+      <div class="flex-start-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+
+    <div class="flex-end">
+      <h2>flex-end</h2>
+      <div class="flex-end-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+
+    <div class="center">
+      <h2>center</h2>
+      <div class="center-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+
+    <div class="space-around">
+      <h2>space-around</h2>
+      <div class="space-around-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+
+    <div class="space-between">
+      <h2>space-between</h2>
+      <div class="space-between-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+  </body>
+</html>
