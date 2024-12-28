@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styled Website</title>
+    <style>
+    /* 기본 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      margin: 0.5em 0;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 헤더 스타일 */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    table, td {
+      border: 1px solid #ddd;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    td[colspan="3"] {
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    /* 네비게이션 스타일 */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    /* 본문 및 사이드바 스타일 */
+    td[valign="top"] {
+      background-color: #fff;
+    }
+
+    td[valign="top"] h3 {
+      color: #555;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+
+    td[valign="top"] ul li {
+      margin: 5px 0;
+    }
+
+    /* 광고 섹션 스타일 */
+    td[width="20%"] {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    /* 푸터 스타일 */
+    td[align="center"] {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      table {
+        width: 100%;
+        display: block;
+      }
+
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <!-- 헤더: 사이트의 제목과 메뉴 -->
+    <table>
+      <tr>
+        <td align="center" colspan="3">
+          <h1>My Website</h1>
+        </td>
+      </tr>
+    </table>
+
+    <!-- 네비게이션: 사이트의 링크 -->
+    <table>
+      <tr>
+        <td width="20%" valign="top">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </td>
+
+        <!-- 본문 -->
+        <td width="60%" valign="top">
+          <h2>Welcome to My Website</h2>
+          <p>This is a simple website layout created with just HTML.</p>
+          <p>Here is some content that goes into the main body of the
+            website.</p>
+
+          <!-- 사이드바 -->
+          <table>
+            <tr>
+              <td width="50%" valign="top">
+                <h3>Sidebar</h3>
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </td>
+              <td width="50%" valign="top">
+                <h3>Sidebar Content</h3>
+                <p>Additional information or links can go here.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- 광고 또는 추가 콘텐츠 -->
+        <td width="20%" valign="top">
+          <h3>Advertisement</h3>
+          <p>Ad content or additional links can go here.</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- 푸터 -->
+    <table>
+      <tr>
+        <td align="center">
+          <p>Copyright 2024 My Website</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
