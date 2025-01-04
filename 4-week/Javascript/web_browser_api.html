@@ -4,62 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Browser API 실습</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body
-    class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-      <h1 class="text-2xl font-bold mb-4">Web Browser API 실습</h1>
+    <style>
+      /* 기본 스타일 */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7fafc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
 
-      <button id="alertButton"
-        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mb-2">
-        Alert 띄우기
-      </button>
-      <button id="promptButton"
-        class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 mb-2">
-        Prompt 실행하기
-      </button>
-      <button id="confirmButton"
-        class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 mb-2">
-        Confirm 실행하기
-      </button>
-      <button id="consoleButton"
-        class="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600">
-        Console.log 출력하기
-      </button>
+      .container {
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 24px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 12px 24px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border: none;
+      }
+
+      #alertButton {
+        background-color: #3b82f6;
+        color: white;
+      }
+      #alertButton:hover {
+        background-color: #2563eb;
+      }
+
+      #promptButton {
+        background-color: #10b981;
+        color: white;
+      }
+      #promptButton:hover {
+        background-color: #059669;
+      }
+
+      #confirmButton {
+        background-color: #f59e0b;
+        color: white;
+      }
+      #confirmButton:hover {
+        background-color: #d97706;
+      }
+
+      #consoleButton {
+        background-color: #8b5cf6;
+        color: white;
+      }
+      #consoleButton:hover {
+        background-color: #6d28d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Web Browser API 실습</h1>
+
+      <button id="alertButton">Alert 띄우기</button>
+      <button id="promptButton">Prompt 실행하기</button>
+      <button id="confirmButton">Confirm 실행하기</button>
+      <button id="consoleButton">Console.log 출력하기</button>
     </div>
 
     <script>
-    // Alert 버튼
-    document.getElementById('alertButton').addEventListener('click', () => {
-      alert('안녕하세요! 이 메시지는 alert로 보여집니다.');
-    });
+      // Alert 버튼
+      document.getElementById('alertButton').addEventListener('click', () => {
+        alert('안녕하세요! 이 메시지는 alert로 보여집니다.');
+      });
 
-    // Prompt 버튼
-    document.getElementById('promptButton').addEventListener('click', () => {
-      const name = prompt('당신의 이름은 무엇인가요?');
-      if (name) {
-        alert(`안녕하세요, ${name}님!`);
-      } else {
-        alert('이름을 입력하지 않으셨습니다.');
-      }
-    });
+      // Prompt 버튼
+      document.getElementById('promptButton').addEventListener('click', () => {
+        const name = prompt('당신의 이름은 무엇인가요?');
+        if (name) {
+          alert(`안녕하세요, ${name}님!`);
+        } else {
+          alert('이름을 입력하지 않으셨습니다.');
+        }
+      });
 
-    // Confirm 버튼
-    document.getElementById('confirmButton').addEventListener('click', () => {
-      const isConfirmed = confirm('이 작업을 진행하시겠습니까?');
-      if (isConfirmed) {
-        alert('작업을 진행합니다.');
-      } else {
-        alert('작업을 취소했습니다.');
-      }
-    });
+      // Confirm 버튼
+      document.getElementById('confirmButton').addEventListener('click', () => {
+        const isConfirmed = confirm('이 작업을 진행하시겠습니까?');
+        if (isConfirmed) {
+          alert('작업을 진행합니다.');
+        } else {
+          alert('작업을 취소했습니다.');
+        }
+      });
 
-    // Console.log 버튼
-    document.getElementById('consoleButton').addEventListener('click', () => {
-      console.log('이 메시지는 브라우저의 개발자 도구 콘솔에 표시됩니다.');
-      alert('콘솔에 메시지가 출력되었습니다. 개발자 도구를 확인하세요!');
-    });
-  </script>
+      // Console.log 버튼
+      document.getElementById('consoleButton').addEventListener('click', () => {
+        console.log('이 메시지는 브라우저의 개발자 도구 콘솔에 표시됩니다.');
+        alert('콘솔에 메시지가 출력되었습니다. 개발자 도구를 확인하세요!');
+      });
+    </script>
   </body>
 </html>
