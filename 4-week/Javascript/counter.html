@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음료수 수량 증가</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 2px solid black;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      border: 2px solid black;
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      background-color: white;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover 상태 */
+    .button:hover {
+      background-color: greenyellow;
+      /* color: blue; */
+    }
+
+    /* 클릭 상태 */
+    .button:active {
+      background-color: darkorange;
+      /* color: darkblue; */
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <span>음료수 수량 : <span id="count">0</span></span>
+      <div class="button" onclick="increaseCount()">증가</div>
+    </div>
+
+    <script>
+    let count = 0;
+
+    function increaseCount() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
+  </body>
+</html>
