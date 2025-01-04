@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>간단한 카운터</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100 flex flex-col items-center">
+
+    <!-- Header -->
+    <header class="w-1/2 bg-blue-500 text-white py-4 my-4 text-center shadow">
+      <h1 class="text-2xl font-bold">간단한 카운터</h1>
+    </header>
+
+    <!-- Counter -->
+    <div class="h-[500px] flex items-center">
+      <div class="bg-white p-8 shadow rounded text-center">
+        <p class="text-lg font-bold mb-4">
+          현재 카운트: <span id="count" class="text-blue-500">0</span>
+        </p>
+        <div class="space-x-4">
+          <button
+            id="increase-btn"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            증가
+          </button>
+          <button
+            id="decrease-btn"
+            class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            감소
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+    let count = 0;
+
+    const countElement = document.getElementById("count");
+    const increaseBtn = document.getElementById("increase-btn");
+    const decreaseBtn = document.getElementById("decrease-btn");
+
+    // 증가 버튼 클릭 시 처리
+    increaseBtn.addEventListener("click", () => {
+      count++;
+      countElement.textContent = count;
+    });
+
+    // 감소 버튼 클릭 시 처리
+    decreaseBtn.addEventListener("click", () => {
+      count--;
+      countElement.textContent = count;
+    });
+  </script>
+
+  </body>
+</html>
