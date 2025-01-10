@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 예제</title>
+    <style>
+    #box {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <script>
+    const box = document.getElementById('box');
+    let position = 0;
+
+    function animate() {
+      position += 2; // 2px씩 이동
+      box.style.left = position + 'px'; // 위치 변경
+
+      // 화면 너비를 넘어서면 초기화
+      if (position > window.innerWidth) {
+        position = 0;
+      }
+
+      requestAnimationFrame(animate); // 다음 프레임 요청
+    }
+
+    animate(); // 애니메이션 시작
+  </script>
+  </body>
+</html>
