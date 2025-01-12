@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            /* flex-direction: column; */
+        }
+        .room {
+            border-width: 1;
+            border-style: solid;
+            border-color: black;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .section {
+            border-width: 1;
+            border-style: solid;
+            border-color: red;
+            height: 250px;
+            width: 100%;
+            display: flex;
+        }
+        .club {
+            border-width: 1;
+            border-style: solid;
+            border-color: blue;
+            height: 250px;
+            width: 100%;
+        }
+        .mini {
+            border-width: 1;
+            border-style: solid;
+            border-color: aquamarine;
+            height: 125px;
+            width: 100%;
+        }
+        .section1 {
+            border-width: 1;
+            border-style: solid;
+            border-color: red;
+            height: 250px;
+            width: 100%;
+        }
+        .club1 {
+            border-width: 1;
+            border-style: solid;
+            border-color: blue;
+            height: 125px;
+            width: 100%;
+            display: flex;
+        }
+        .inside {
+            border-width: 1;
+            border-style: solid;
+            border-color: green;
+            height: 125px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="room">
+            <div class="section">
+                <div class="club">침대</div>
+                <div class="club">
+                    <div class="mini">서랍</div>
+                    <div class="mini"></div>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="club1"></div>
+                <div class="club1">
+                    <div class="inside">책상</div>
+                    <div class="inside"></div>
+                </div>
+            </div>
+         </div>
+         
+    </div>
+</body>
+</html>
