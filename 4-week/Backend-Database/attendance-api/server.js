@@ -3,6 +3,7 @@ const fs = require('fs');
 const { parse } = require('json2csv');
 const csvParser = require('csv-parser');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
@@ -34,6 +35,8 @@ const saveAttendance = (data) => {
   const csvData = parse(data);
   fs.writeFileSync(csvFilePath, csvData);
 };
+
+app.use(cors());
 
 // 출석부 목록 조회 API
 app.get('/attendance', async (req, res) => {

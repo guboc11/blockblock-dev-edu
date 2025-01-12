@@ -1,2 +1,14 @@
-name,grade,studentId, attendance
-park,1,2013, true
+"name","grade","studentId"," attendance"
+"park","1","2013"," true"
+"lee"," 2"," 2019"," true"
+"choi"," 1"," 2019"," true"
+"jeong","4","2023",""
+"han","5","2023",""
+"myo","5","2023",""
+"han","5","2023",""
+"Yang","5","2023",""
+"ye","4","2023",""
+"ye","4","2023",""
+"hi","2","123123",""
+"sdfsdf","234234","234234",""
+"terte","qweqw","ewew",
