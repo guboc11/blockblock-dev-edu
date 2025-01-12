@@ -1,2 +1,2 @@
-name,grade,studentId
-park,1,2013
+name,grade,studentId, attendance
+park,1,2013, true

@@ -47,7 +47,7 @@ app.get('/attendance', async (req, res) => {
 
 // 출석부에 학생 추가 API
 app.post('/attendance', async (req, res) => {
-  const { name, grade, studentId } = req.body;
+  const { name, grade, studentId, attendance } = req.body;
 
   if (!name || !grade || !studentId) {
     return res.status(400).send('Missing required fields');
