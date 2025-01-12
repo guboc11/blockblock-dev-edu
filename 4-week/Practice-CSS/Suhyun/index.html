@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나도 방구조</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+        .room{
+            border-width: 1;
+            border-style: solid; 
+            border-color: black;
+            height: 500px;
+            width: 500px
+        }
+        .blank1{
+            height: 250px;
+            width: 500px;
+            display: flex;
+        }
+
+        .blank2{
+            height: 250px;
+            width: 500px;
+        }
+        .bed{
+            border-width: 5;
+            border-style: solid; 
+            border-color: black;
+            background-color: aqua;
+            height: 250px;
+            width: 200px;
+            text-align: center;
+        }
+        .shelf{
+            border-width: 5;
+            border-style: solid; 
+            border-color: black;
+            background-color: brown;
+            height: 125px;
+            width: 300px;
+            text-align: center;
+        }
+        .blank3{
+            height: 125px;
+            width: 500px;
+        }
+        .desk{
+            border-width: 5;
+            border-style: solid; 
+            border-color: black;
+            background-color: red;
+            height: 125px;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>blockblock</div>
+    <div class="container">
+        <div class="room">
+            <div class="blank1">
+                <div class="bed">침대</div>
+                <div class="shelf">서랍</div>
+            </div>
+            <div class="blank2">
+                <div class="blank3"></div>
+                <div class="desk">책상</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
