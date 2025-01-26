@@ -12,7 +12,7 @@ import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export function Counter({ id }: { id: string }) {
-  const counterPackageId = useNetworkVariable("counterPackageId");
+  const counterPackageId = "0xfbd2831de28db691982125d4704b8924ec2844723f2e185ddbc925133fb00221";
   const suiClient = useSuiClient();
   const currentAccount = useCurrentAccount();
   const { mutate: signAndExecute } = useSignAndExecuteTransaction();
