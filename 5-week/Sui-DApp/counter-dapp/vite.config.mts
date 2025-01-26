@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     allowedHosts: [
-      'your host url',
+      '5173-guboc11-blockblockdeved-3vnsplc86kz.ws-us117.gitpod.io',
     ],
   },
 });

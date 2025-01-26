@@ -9,7 +9,7 @@ export function CreateCounter({
 }: {
   onCreated: (id: string) => void;
 }) {
-  const counterPackageId = useNetworkVariable("counterPackageId");
+  const counterPackageId = "0xf8a130ac7d1b44d1c06d1d05ea46ad55e40e3c4a727845991a4b5a1bfab3c402";
   const suiClient = useSuiClient();
   const {
     mutate: signAndExecute,
